@@ -3,6 +3,7 @@ package Calculator;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -44,4 +45,20 @@ public class SubtractTest {
         //then
         assertEquals(expected, actual);
     }
+
+    @Test
+    void should_SubtractTenDecimalNumbers_When_PassTenNumbers() {
+        //given
+        Double[] array = { 100.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 10.0};
+        List<Double> numbers= Arrays.asList(array);
+
+
+        double expected = 60;
+        //when
+        IOperation calculatorManager = new Subtract();
+        double actual = calculatorManager.DoOperation(numbers);
+        //then
+        assertEquals(expected, actual);
+    }
+
 }
