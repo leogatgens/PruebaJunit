@@ -25,4 +25,23 @@ public class SubtractTest {
         //then
         assertEquals(expected, actual);
     }
+
+    @Test
+    void should_SubtractThreeDecimalNumbers_When_PassThreeNumbers() {
+        //given
+        double firstNumber = 20.0;
+        double secondNumber = 10.0;
+        double thirdNumber = 5.0;
+
+        List<Double> numbers = new ArrayList<>();
+        numbers.add(firstNumber);
+        numbers.add(secondNumber);
+        numbers.add(thirdNumber);
+        double expected = 5;
+        //when
+        IOperation calculatorManager = new Subtract();
+        double actual = calculatorManager.DoOperation(numbers);
+        //then
+        assertEquals(expected, actual);
+    }
 }
