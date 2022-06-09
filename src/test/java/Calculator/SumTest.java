@@ -2,10 +2,8 @@ package Calculator;
 
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 
@@ -17,7 +15,7 @@ public class SumTest {
     void should_ReturnZero_When_PassEmptyListOfNumbers(){
         //given
 
-        List<Double> numbers=new ArrayList<Double>();
+        List<Double> numbers= new ArrayList<>();
 
         double expected = 0;
         //when
@@ -32,7 +30,7 @@ public class SumTest {
         //given
         double firstNumber = 9.8;
         double secondNumber = 10.2;
-        List<Double> numbers=new ArrayList<Double>();
+        List<Double> numbers= new ArrayList<>();
         numbers.add(firstNumber);
         numbers.add(secondNumber);
         double expected = 20;
@@ -49,7 +47,7 @@ public class SumTest {
         double firstNumber = 5;
         double secondNumber = 7.5;
         double thirdNumber = 7.5;
-        List<Double> numbers=new ArrayList<Double>();
+        List<Double> numbers= new ArrayList<>();
         numbers.add(firstNumber);
         numbers.add(secondNumber);
         numbers.add(thirdNumber);
@@ -66,7 +64,7 @@ public class SumTest {
     @Test
     void should_SumTenDecimalNumbers_When_PassTenNumbers(){
         //given
-        Double array[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
+        Double[] array = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
         List<Double> numbers= Arrays.asList(array);
 
 

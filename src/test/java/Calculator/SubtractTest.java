@@ -15,7 +15,7 @@ public class SubtractTest {
         //given
         double firstNumber = 9.8;
         double secondNumber = 10.8;
-        List<Double> numbers = new ArrayList<Double>();
+        List<Double> numbers = new ArrayList<>();
         numbers.add(firstNumber);
         numbers.add(secondNumber);
         double expected = -1;
