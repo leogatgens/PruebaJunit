@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class SubtractTest {
-    private IOperation calculatorManager;
+    private IStrategyOperation calculatorManager;
     @BeforeEach
     void setup(){
         calculatorManager = new Subtract();
@@ -25,7 +25,7 @@ public class SubtractTest {
 
 
         //when
-        IOperation calculatorManager = new Subtract();
+        IStrategyOperation calculatorManager = new Subtract();
         Exception exception = assertThrows(IndexOutOfBoundsException.class, () -> {
             double actual = calculatorManager.DoOperation(numbers);
         });
@@ -76,7 +76,7 @@ public class SubtractTest {
 
         double expected = 60;
         //when
-        
+
         double actual = calculatorManager.DoOperation(numbers);
         //then
         assertEquals(expected, actual);

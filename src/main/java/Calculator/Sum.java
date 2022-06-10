@@ -2,7 +2,7 @@ package Calculator;
 
 import java.util.List;
 
-class  Sum implements IOperation {
+public class  Sum implements IStrategyOperation {
 
 
 //    private double doSum(List<Double> numbers) {

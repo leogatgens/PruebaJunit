@@ -11,7 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SumTest {
-    private IOperation calculatorManager;
+    private IStrategyOperation calculatorManager;
     @BeforeEach
     void setup(){
         calculatorManager = new Sum();
@@ -75,7 +75,7 @@ public class SumTest {
 
         double expected = 36;
         //when
-        IOperation calculatorManager = new Sum();
+        IStrategyOperation calculatorManager = new Sum();
         double actual = calculatorManager.DoOperation(numbers);
         //then
         assertEquals(expected,actual);

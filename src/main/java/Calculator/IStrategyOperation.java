@@ -2,6 +2,6 @@ package Calculator;
 
 import java.util.List;
 
-public interface IOperation {
+public interface IStrategyOperation {
     double DoOperation(List<Double> numbers);
 }

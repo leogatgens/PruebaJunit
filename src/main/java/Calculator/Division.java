@@ -2,7 +2,7 @@ package Calculator;
 
 import java.util.List;
 
-public class Division  implements  IOperation{
+public class Division  implements IStrategyOperation {
     @Override
     public double DoOperation(List<Double> numbers) {
         return  numbers.stream().skip(1).reduce(numbers.get(0), (accumulator, item) -> {

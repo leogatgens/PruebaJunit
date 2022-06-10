@@ -2,7 +2,7 @@ package Calculator;
 
 import java.util.List;
 
-public class Multiplication implements IOperation {
+public class Multiplication implements IStrategyOperation {
 
 
     @Override

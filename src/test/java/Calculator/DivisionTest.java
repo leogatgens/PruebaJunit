@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DivisionTest {
 
-    private IOperation calculatorManager;
+    private IStrategyOperation calculatorManager;
 
     @BeforeEach
     void setup(){

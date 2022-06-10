@@ -1,9 +1,8 @@
 package Calculator;
 
 import java.util.List;
-import java.util.ListIterator;
 
-public class Subtract implements  IOperation {
+public class Subtract implements IStrategyOperation {
     @Override
     public double DoOperation(List<Double> numbers) {
         return DoSubtractRefactored(numbers);
