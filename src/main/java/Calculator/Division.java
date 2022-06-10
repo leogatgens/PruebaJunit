@@ -5,6 +5,10 @@ import java.util.List;
 public class Division  implements  IOperation{
     @Override
     public double DoOperation(List<Double> numbers) {
-        return 0;
+        return  numbers.stream().skip(1).reduce(numbers.get(0), (accumulator, item) -> {
+            System.out.println("accumulator " + accumulator);
+            System.out.println("item "  + item);
+            return accumulator / item;
+        } );
     }
 }
