@@ -1,5 +1,6 @@
 package Calculator;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -10,6 +11,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MultiplicationTest {
 
+    private IOperation calculatorManager;
+    @BeforeEach
+    void setup(){
+        calculatorManager = new Multiplication();
+    }
     @Test
     void should_SumTwoDecimalNumbers_When_PassTwoNumbers(){
         //given
@@ -20,7 +26,7 @@ public class MultiplicationTest {
         numbers.add(secondNumber);
         double expected = 6;
         //when
-        IOperation calculatorManager = new Multiplication();
+
         double actual = calculatorManager.DoOperation(numbers);
         //then
         assertEquals(expected,actual);

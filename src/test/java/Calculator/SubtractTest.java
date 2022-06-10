@@ -1,6 +1,7 @@
 package Calculator;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -11,7 +12,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class SubtractTest {
-
+    private IOperation calculatorManager;
+    @BeforeEach
+    void setup(){
+        calculatorManager = new Subtract();
+    }
     @Test
     void should_ReturnZero_When_PassEmptyListOfNumbers(){
 
@@ -37,7 +42,7 @@ public class SubtractTest {
         numbers.add(secondNumber);
         double expected = -1;
         //when
-        IOperation calculatorManager = new Subtract();
+
         double actual = calculatorManager.DoOperation(numbers);
         //then
         assertEquals(expected, actual);
@@ -56,7 +61,7 @@ public class SubtractTest {
         numbers.add(thirdNumber);
         double expected = 5;
         //when
-        IOperation calculatorManager = new Subtract();
+
         double actual = calculatorManager.DoOperation(numbers);
         //then
         assertEquals(expected, actual);
@@ -71,7 +76,7 @@ public class SubtractTest {
 
         double expected = 60;
         //when
-        IOperation calculatorManager = new Subtract();
+        
         double actual = calculatorManager.DoOperation(numbers);
         //then
         assertEquals(expected, actual);
