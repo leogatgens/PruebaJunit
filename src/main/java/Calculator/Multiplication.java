@@ -7,6 +7,10 @@ public class Multiplication implements IOperation {
 
     @Override
     public double DoOperation(List<Double> numbers) {
-        return 0;
+        return  numbers.stream().reduce(1.0, (accumulator, item) -> {
+            System.out.println("accumulator " + accumulator);
+            System.out.println("item "  + item);
+            return accumulator * item;
+        } );
     }
 }

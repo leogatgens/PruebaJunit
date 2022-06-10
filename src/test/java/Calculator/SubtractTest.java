@@ -1,5 +1,6 @@
 package Calculator;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -7,10 +8,25 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class SubtractTest {
 
+    @Test
+    void should_ReturnZero_When_PassEmptyListOfNumbers(){
 
+        //given
+        List<Double> numbers= new ArrayList<>();
+
+
+        //when
+        IOperation calculatorManager = new Subtract();
+        Exception exception = assertThrows(IndexOutOfBoundsException.class, () -> {
+            double actual = calculatorManager.DoOperation(numbers);
+        });
+        //then
+        Assertions.assertEquals("La lista de numeros no contiene elementos", exception.getMessage());
+    }
     @Test
     void should_SubtractTwoDecimalNumbers_When_PassTwoNumbers() {
         //given
