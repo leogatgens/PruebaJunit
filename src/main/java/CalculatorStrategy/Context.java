@@ -1,4 +1,4 @@
-package CalculatorStrategie;
+package CalculatorStrategy;
 
 import java.util.List;
 

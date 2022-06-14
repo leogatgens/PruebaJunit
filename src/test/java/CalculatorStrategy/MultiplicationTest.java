@@ -1,4 +1,4 @@
-package CalculatorStrategie;
+package CalculatorStrategy;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
