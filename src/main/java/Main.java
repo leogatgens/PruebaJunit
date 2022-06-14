@@ -1,7 +1,7 @@
-import Calculator.Context;
-import Calculator.Multiplication;
-import Calculator.Subtract;
-import Calculator.Sum;
+import CalculatorStrategie.Context;
+import CalculatorStrategie.Multiplication;
+import CalculatorStrategie.Subtract;
+import CalculatorStrategie.Sum;
 import java.util.Arrays;
 import java.util.List;
 
