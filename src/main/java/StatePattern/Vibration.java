@@ -8,7 +8,7 @@ class Vibration implements IState {
 
     @Override
     public String getState(StateContext ctx) {
-        System.out.println(ctx.stateName);
+
         return ctx.stateName;
     }
 

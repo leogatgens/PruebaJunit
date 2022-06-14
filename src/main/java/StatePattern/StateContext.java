@@ -22,7 +22,7 @@ class StateContext {
         currentState.changeTheme(this);
     }
 
-    public void getState() {
-        currentState.getState(this);
+    public String getState() {
+       return currentState.getState(this);
     }
 }
