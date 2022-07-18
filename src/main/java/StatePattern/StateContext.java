@@ -1,6 +1,6 @@
 package StatePattern;
 
-class StateContext {
+public class StateContext {
     private IState currentState;
     public String stateName;
 

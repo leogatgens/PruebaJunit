@@ -1,6 +1,6 @@
 package StatePattern;
 
-class Party implements IState {
+public class Party implements IState {
 
     @Override
     public void alert(StateContext ctx) {

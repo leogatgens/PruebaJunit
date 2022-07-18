@@ -1,6 +1,6 @@
 package StatePattern;
 
-class Silent implements IState {
+public class Silent implements IState {
     @Override
     public void alert(StateContext ctx) {
         System.out.println("Alert silent...");
